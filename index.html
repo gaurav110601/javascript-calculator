@@ -1,0 +1,40 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>JavaScript Calculator</title>
+        <style>
+            h1{
+                text-align:center;
+            }
+        </style>
+        <script>
+            function jscalculator(){
+                var num1 = parseInt(prompt("enter first number : "));
+                var operator = prompt("enter any operator : ", "+, -, * or /");
+                var num2 = parseInt(prompt("enter second number : "));
+                var ans;
+                
+                if (operator == "+"){
+                    ans = num1 + num2;
+                }
+                else if (operator == "-"){
+                    ans = num1 - num2;
+                }
+                else if (operator == "*"){
+                    ans = num1 * num2;
+                }
+                else if (operator == "/"){
+                    ans = num1 / num2;
+                }
+                
+                document.write(ans);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>JavaScript Calculator</h1>
+        <form>
+            <center><input type="button" value="click here to continue" onclick="jscalculator()"></center>
+        </form>
+    </body>
+</html>
